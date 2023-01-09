@@ -56,8 +56,9 @@ const TableData = () => {
                     <p className='card-text'>ID:{student.id}</p>
                     <p className='card-text'>Name:{student.firstName} {student.lastName}</p>
                     <p className='card-text'>Age:{student.age}</p>
-                    <button type="button" class="btn btn-outline-info">Hide</button>
-                </div>
+                 <button type="button" class="btn btn-outline-info" onClick={()=>{setStudent({});setShowDetails(false);}}>Hide</button>
+
+                </div> 
             </div>
         );
     }
